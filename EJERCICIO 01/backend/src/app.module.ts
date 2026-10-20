@@ -15,7 +15,7 @@ import { VideojuegosModule } from './videojuegos/videojuegos.module';
       port: 5432,
       username: 'postgres',
       password: '1234',
-      database: 'postgres',
+      database: 'databridge_e01',
 
       // Las Entities registradas en los módulos se cargarán automáticamente.
       autoLoadEntities: true,
