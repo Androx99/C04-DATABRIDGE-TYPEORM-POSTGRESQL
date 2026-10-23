@@ -52,5 +52,3 @@ const styles = StyleSheet.create({
   movie: { fontSize: 18, fontWeight: '700' },
   favorite: { fontSize: 20, color: '#E11D48' },
 });
-
-});
