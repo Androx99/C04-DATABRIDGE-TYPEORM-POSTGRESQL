@@ -9,7 +9,7 @@ type Mascota = {
   raza: string;
   edad: number;
   ciudad: string;
-  energia: string;
+  nivelEnergia: string;
 };
 
 const API_URL = 'http://172.22.28.53:3000';
@@ -36,7 +36,7 @@ export default function App() {
       </View>
       <View style={styles.card}>
         <Text style={styles.emoji}>⚡</Text>
-        <Text style={styles.title}>Nivel de Energía: {mascota.energia}</Text>
+        <Text style={styles.title}>Nivel de Energía: {mascota.nivelEnergia}</Text>
       </View>
     </SafeAreaView>
   );

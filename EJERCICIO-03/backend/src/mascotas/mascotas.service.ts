@@ -10,7 +10,7 @@ export class MascotasService implements OnModuleInit {
   async onModuleInit(){
     if(await this.repository.count()===0){
       await this.repository.save(this.repository.create({
-        nombre:'Nala',raza:'Golden Retriever',edad:4,ciudad:'Zaragoza', energia:'Alta'
+        nombre:'Nala',raza:'Golden Retriever',edad:4,ciudad:'Zaragoza', nivelEnergia:'Alta'
       }));
     }
   }

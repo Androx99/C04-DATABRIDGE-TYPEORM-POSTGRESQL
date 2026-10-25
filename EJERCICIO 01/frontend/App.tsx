@@ -18,6 +18,7 @@ type Videojuego = {
   id: number;
   titulo: string;
   plataforma: string;
+  genero: string;
   puntuacion: number;
 };
 
@@ -90,7 +91,7 @@ export default function App() {
 
               <View style={styles.cardContent}>
                 <Text style={styles.gameTitle}>{item.titulo}</Text>
-                <Text style={styles.platform}>{item.plataforma}</Text>
+                <Text style={styles.platform}>{item.plataforma} · {item.genero}</Text>
               </View>
 
               <View style={styles.score}>

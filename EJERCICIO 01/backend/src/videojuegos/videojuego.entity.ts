@@ -22,6 +22,9 @@ export class Videojuego {
   @Column()
   plataforma: string;
 
+  @Column()
+  genero: string;
+
   // precision 3 + scale 1 permite valores como 9.4 o 10.0.
   @Column('decimal', { precision: 3, scale: 1 })
   puntuacion: number;

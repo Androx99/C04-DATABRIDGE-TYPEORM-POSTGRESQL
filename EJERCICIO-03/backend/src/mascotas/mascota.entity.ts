@@ -20,4 +20,5 @@ export class Mascota {
   ciudad: string;
 
   @Column()
-  energia: string;} 
+  nivelEnergia: string;
+}
