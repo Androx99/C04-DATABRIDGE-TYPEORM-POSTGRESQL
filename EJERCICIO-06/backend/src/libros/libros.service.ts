@@ -33,10 +33,10 @@ export class LibrosService implements OnModuleInit {
     return this.repository.find({ order: { titulo: 'ASC' } });
   }
 
-  async marcarLeido(id: number): Promise<Libro> {
+  async marcarLeido(id: number, leido?: boolean): Promise<Libro> {
     const libro = await this.repository.findOneBy({ id });
     if (!libro) throw new NotFoundException('Libro no encontrado');
-    libro.leido = true;
+    libro.leido = typeof leido === 'boolean' ? leido : !libro.leido;
     return this.repository.save(libro);
   }
 
